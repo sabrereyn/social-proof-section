@@ -1,0 +1,205 @@
+:root {
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Spartan";
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  background-image: url("images/bg-pattern-top-desktop.svg"),
+    url("images/bg-pattern-bottom-desktop.svg");
+  background-position: top left, right bottom;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 80%;
+  margin: 7% auto;
+}
+
+/* ~~~ Top ~~~ */
+
+.top {
+  margin-bottom: 4%;
+  justify-content: space-between;
+}
+
+/* ~~~ Top : Left || Selling Message ~~~ */
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.selling-point {
+  width: 40%;
+}
+
+.message {
+  color: hsl(303, 10%, 53%);
+}
+
+/* ~~~ Top : Right || Ratings ~~~ */
+
+.rates {
+  flex-direction: column;
+  width: 45%;
+}
+
+.rates-content {
+  min-width: 60%;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 12px 30px 10px;
+}
+
+.rating {
+  color: hsl(300, 43%, 22%);
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.stars {
+  margin-right: 10px;
+}
+
+/* ~~~ Testimonials ~~~ */
+.testimonials {
+  height: 300px;
+  font-size: 12px;
+  line-height: 2;
+  justify-content: space-between;
+}
+
+.testimonials-card {
+  width: 30%;
+  min-height: 60%;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 3%;
+  border-radius: 10px;
+}
+
+.testimonials-person {
+  margin-bottom: 10%;
+  line-height: 1.5;
+}
+
+.testimonials-img {
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+}
+
+/* ~~~ Attribution ~~~ */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ~~~ Shared Classes ~~~ */
+
+.flex {
+  display: flex;
+}
+
+.flex-start {
+  align-self: flex-start;
+}
+
+.flex-center {
+  align-self: center;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+/* ~~~ Media ~~~ */
+
+@media screen and (max-width: 1024px) {
+  .selling-point {
+    width: 100%;
+  }
+
+  .rates {
+    width: 100%;
+  }
+
+  .testimonials {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 10%;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .rates-content {
+    flex-direction: column;
+  }
+
+  .testimonials {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  * {
+    text-align: center;
+  }
+
+  .top {
+    margin-bottom: 15%;
+  }
+
+  .message {
+    margin-bottom: 8%;
+  }
+
+  .stars {
+    margin: 0 0 5px 0;
+  }
+
+  .testimonials {
+    height: auto;
+  }
+
+  .testimonials-card {
+    width: 100%;
+    padding: 8%;
+    margin-bottom: 5%;
+  }
+
+  .testimonials-card p,
+  .testimonials-person > p {
+    text-align: left;
+  }
+
+  .flex {
+    display: block;
+  }
+}
